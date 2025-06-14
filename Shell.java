@@ -13,7 +13,6 @@ public class Shell {
         }
     }
 
-    // Faz o Shell Sort e mede: tempo, trocas e iteracoes
     public static Resultado shellSort(int[] vetor) {
         int trocas = 0;
         int iteracoes = 0;
@@ -42,7 +41,6 @@ public class Shell {
         return new Resultado(fim - inicio, trocas, iteracoes);
     }
 
-    // Converte uma linha de texto para vetor de inteiros
     public static int[] converterLinhaParaVetor(String linha) {
         String[] partes = linha.split(",");
         int[] vetor = new int[partes.length];
@@ -52,7 +50,6 @@ public class Shell {
         return vetor;
     }
 
-    // Método principal com leitura SEM try-catch
     public static void main(String[] args) throws IOException {
         String[] arquivosDados = {
                 "1000.txt",
@@ -89,7 +86,6 @@ public class Shell {
             }
 
             reader.close();
-
             double mediaTempo = somaTempo / (double) totalRodadas;
             double mediaTrocas = somaTrocas / (double) totalRodadas;
             double mediaIteracoes = somaIteracoes / (double) totalRodadas;

@@ -6,20 +6,20 @@ public class GerarNumeros {
 
     public static void gerarNums(int quant,String nomeArquivo){
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))){
-            Random rd = new Random(123); // seed é 123
+            Random rd = new Random(123);
 
-            for (int i = 0; i<5; i++){ // faz 5 linhas pra cada txt, cada linha tem o total de dados
+            for (int i = 0; i<5; i++){
                 StringBuilder linha = new StringBuilder();
-                for (int j = 0; j<quant;j++){ // o forr da quantia de dados.
-                    int numero = rd.nextInt(1_000_000); // deixa o numero maximo como 1.000.000
+                for (int j = 0; j<quant;j++){
+                    int numero = rd.nextInt(1_000_000);
                     linha.append(numero);
                     if (j < quant -1){
-                        linha.append(","); // separacao de numeros por virgula
+                        linha.append(",");
                     }
                 }
 
                 writer.write(linha.toString());
-                writer.newLine(); // prox linha é novo um vetor
+                writer.newLine();
             }
         } catch (Exception e){
             e.printStackTrace();
