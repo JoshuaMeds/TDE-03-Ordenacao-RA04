@@ -1,8 +1,6 @@
 # 💻 TDE 03 - Ordenação RA04 📖
 
-ainda não tem vídeo 😊
-
-Link para o Vídeo [TDE 03 - Ordenação RA04](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+Link para o Vídeo [TDE 03 - Ordenação RA04](https://youtu.be/wUpL0ImFmAg)
 
 # GerarNumeros
 Esse programa cria arquivos txts separados em 1000.txt | 10000.txt | 100000.txt | 500000.txt | 1000000.txt e vetores que vão ser ordenados;
